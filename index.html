@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wujianan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="css/photoswipe.css" /> 
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+        In the folder of skin CSS file there are also:
+        - .png and .svg icons sprite, 
+        - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="css/default-skin.css" /> 
+    <!-- Core JS file -->
+    <script src="js/photoswipe.min.js"></script> 
+    <!-- UI JS file -->
+    <script src="js/photoswipe-ui-default.min.js"></script> 
+    <script src="js/index.js"></script>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+    <div class="navbar-menu">
+      <a aria-current="page">Photography</a>
+      <span class="dividingLine">|</span>
+      <a href="./introduce.html">Introduce</a>
+    </div>
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery" data-pswp-uid="1" >
+      <div class="photos">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="images/crane.jpg" itemprop="contentUrl" data-size="1080x1616">
+            <img src="images/crane-small.jpg" itemprop="thumbnail">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="images/branches-with-leaves.jpg" itemprop="contentUrl" data-size="1616x1080">
+            <img src="images/branches-with-leaves-small.jpg" itemprop="thumbnail">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="images/waterflow.jpg" itemprop="contentUrl" data-size="1080x1616">
+            <img src="images/waterflow-small.jpg" itemprop="thumbnail">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="images/flower.jpg" itemprop="contentUrl" data-size="1080x1616">
+            <img src="images/flower-small.jpg" itemprop="thumbnail">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="images/jenny.jpg" itemprop="contentUrl" data-size="1616x1080">
+            <img src="images/jenny-small.jpg" itemprop="thumbnail">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="images/crossroads.jpg" itemprop="contentUrl" data-size="1616x1080">
+            <img src="images/crossroads-small.jpg" itemprop="thumbnail">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="images/window-of-plane.jpg" itemprop="contentUrl" data-size="1080x1616">
+            <img src="images/window-of-plane-small.jpg" itemprop="thumbnail">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="images/greenman.jpg" itemprop="contentUrl" data-size="1080x1616">
+            <img src="images/greenman-small.jpg" itemprop="thumbnail">
+          </a>
+        <!--
+        </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="images/couple.jpg" itemprop="contentUrl" data-size="1080x1616">
+            <img src="images/couple-small.jpg" itemprop="thumbnail">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="images/rain-falling-on-the-water.jpg" itemprop="contentUrl" data-size="1616x1080">
+            <img src="images/rain-falling-on-the-water-small.jpg" itemprop="thumbnail">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="images/reflection-of-the-tree.jpg" itemprop="contentUrl" data-size="1616x1080">
+            <img src="images/reflection-of-the-tree-small.jpg" itemprop="thumbnail">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="images/rainy-day.jpg" itemprop="contentUrl" data-size="1080x1616">
+            <img src="images/rainy-day-small.jpg" itemprop="thumbnail">
+          </a>
+        </figure>
+        -->
+      </div>
+    </div>
+    <p class="copyright">Copyright © wujianan.co. All rights reserved.</p>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Background of PhotoSwipe. 
+            It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/photoswipe.min.js"></script>
+    <script src="js/photoswipe-ui-default.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
